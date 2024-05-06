@@ -1,0 +1,119 @@
+<x-app-layout>
+    <style>
+        .workshop-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .workshop-content {
+            max-width: 100%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .workshop-image {
+            margin-right: 400px; 
+        }
+        .workshop-details {
+            max-width: 60%; 
+        }
+        .card {
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #212121;
+            border: 5px solid #222;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+                    rgba(0, 0, 0, 0.23) 0px 6px 6px,
+                    inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+                    inset rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            transition: all ease-in-out 0.3s;
+            overflow: hidden;
+        }
+
+        .card-title {
+            margin: 0;
+            font-size: 18px;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: #fff; /* Tekstkleur wit */
+            cursor: default;
+        }
+
+        .card-des {
+            margin: 0;
+            font-size: 15px;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: #fff; 
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            display: -webkit-box;
+            cursor: default;
+        }
+
+        .card-text {
+            position: absolute;
+            margin: 0;
+            font-size: 14px;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            color: #fff; 
+            right: 20px;
+            bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            opacity: 0;
+            transition: all ease-in-out 0.3s;
+            animation: textanimate 0.8s alternate infinite;
+            cursor: pointer;
+        }
+
+        .card:hover > .card-text {
+            opacity: 1;
+        }
+
+        @keyframes textanimate {
+            0% {
+                right: 20px;
+            }
+
+            100% {
+                right: 10px;
+            }
+        }
+
+        .arrow-icon {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+    </style>
+
+    <div class="workshop-container">
+        <div class="workshop-content">
+            <div class="workshop-image">
+                <img src="{{ asset('images/curio logo.png') }}" alt="Workshop Image">
+            </div>
+            <div class="workshop-details">
+                <div class="card">
+                    <h2 class="card-title">Workshop Titel</h2>
+                    <p class="card-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis diam eget nisl ultricies, nec pellentesque sapien vestibulum. Sed sagittis elit eu libero venenatis, a pulvinar dolor fringilla. Nullam pharetra, justo et faucibus scelerisque, ante lectus rhoncus lacus, id condimentum ligula ligula ac risus. Sed quis justo non lacus rhoncus consectetur. Nam vel tellus et turpis tincidunt vulputate in nec quam. Duis vel tincidunt urna. In hac habitasse platea dictumst. Sed tincidunt nibh a lacus malesuada, nec tempor turpis iaculis. Cras feugiat id libero ut cursus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</x-app-layout>
