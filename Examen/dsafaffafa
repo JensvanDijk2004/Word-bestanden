@@ -112,6 +112,10 @@
                 <div class="card">
                     <h2 class="card-title">Workshop Titel</h2>
                     <p class="card-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis diam eget nisl ultricies, nec pellentesque sapien vestibulum. Sed sagittis elit eu libero venenatis, a pulvinar dolor fringilla. Nullam pharetra, justo et faucibus scelerisque, ante lectus rhoncus lacus, id condimentum ligula ligula ac risus. Sed quis justo non lacus rhoncus consectetur. Nam vel tellus et turpis tincidunt vulputate in nec quam. Duis vel tincidunt urna. In hac habitasse platea dictumst. Sed tincidunt nibh a lacus malesuada, nec tempor turpis iaculis. Cras feugiat id libero ut cursus.</p>
+                    <div style="text-align: center;">
+                        <button style="width: 160px; border-radius: 10px; background-color: white; color: black; border: 1px solid black; padding: 10px 0; font-size: 16px;">Excel aanmaken</button>
+                    </div>
+
                 </div>
             </div>
         </div>
